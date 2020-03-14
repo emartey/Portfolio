@@ -65,24 +65,19 @@ let resumeData = {
   // ],
   "portfolio": [
     {
-      "name": "project1",
+      "name": "KOLLAB",
       "description": "mobileapp",
-      "imgurl": "images/portfolio/phone.jpg"
+      "imgurl": "images/portfolio/KOLLAB.png"
     },
     {
-      "name": "project2",
+      "name": "Dragon Ball Universe Trivia",
       "description": "mobileapp",
-      "imgurl": "images/portfolio/project.jpg"
+      "imgurl": "images/portfolio/DragonBall.png"
     },
     {
-      "name": "project3",
+      "name": "BAMAZON",
       "description": "mobileapp",
-      "imgurl": "images/portfolio/project2.png"
-    },
-    {
-      "name": "project4",
-      "description": "mobileapp",
-      "imgurl": "images/portfolio/phone.jpg"
+      "imgurl": "images/portfolio/BAMAZON.png"
     }
   ],
   "testimonials": [

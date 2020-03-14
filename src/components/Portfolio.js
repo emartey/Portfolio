@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Fade from 'react-reveal/Fade';
+// "twelve columns collapsed"
 export default class Porfolio extends Component {
   render() {
     let resumeData = this.props.resumeData;
@@ -8,7 +9,7 @@ export default class Porfolio extends Component {
         <div className="text-container">
           <div className="row">
             <div className="twelve columns collapsed">
-              <h1><span>Check out some of my work</span></h1>
+              <h1><span>Check Out Some of Work</span></h1>
             </div>
             <div className="ten columns flex-container">
               <div className="flexslider">
@@ -16,19 +17,14 @@ export default class Porfolio extends Component {
                   {
                     resumeData.portfolio && resumeData.portfolio.map((item) => {
                       return (
-                        <div className="columns portfolio-item">
-                          <div className="item-wrap">
-                            <a href="#modal-01">
-                              <img src={`${item.imgurl}`} className="item-img" />
-                              <div className="overlay">
-                                <div className="portfolio-item-meta">
-                                  <h5>{item.name}</h5>
-                                  <p>{item.description}</p>
-                                </div>
-                              </div>
-                            </a>
-                          </div>
-                        </div>
+                        <li>
+                          <img src={`${item.imgurl}`} className="item-img" alt="" />
+                          <p>
+                            {item.description}
+                          </p>
+                          <cite>{item.name}</cite>
+
+                        </li>
                       )
                     })
                   }
@@ -36,8 +32,8 @@ export default class Porfolio extends Component {
               </div> {/* div.flexslider ends */}
             </div> {/* div.flex-container ends */}
           </div> {/* row ends */}
-        </div>
-      </Fade></section>
+        </div>  {/* text-container ends */}
+      </Fade> </section>
     );
   }
 }

@@ -3,10 +3,17 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "fittext": "^1.0.1",
+    "flexslider": "^2.7.2",
+    "init": "^0.1.2",
+    "jquery": "^3.4.1",
+    "magnific-popup": "^1.1.0",
+    "migrate": "^1.6.2",
     "react": "^16.6.0",
     "react-dom": "^16.6.0",
     "react-reveal": "^1.2.2",
-    "react-scripts": "2.1.1"
+    "react-scripts": "2.1.1",
+    "waypoints": "^4.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
