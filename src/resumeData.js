@@ -67,17 +67,22 @@ let resumeData = {
     {
       "name": "KOLLAB",
       "description": "mobileapp",
-      "imgurl": "images/portfolio/KOLLAB.png"
+      "imgurl": "images/portfolio/KOLLAB.png",
+      "url": "https://github.com/emartey/project-3/tree/edward-branch"
+
     },
     {
       "name": "Dragon Ball Universe Trivia",
       "description": "mobileapp",
-      "imgurl": "images/portfolio/DragonBall.png"
+      "imgurl": "images/portfolio/DragonBall.png",
+      "url": "https://github.com/emartey/TriviaGame"
+
     },
     {
       "name": "BAMAZON",
       "description": "mobileapp",
-      "imgurl": "images/portfolio/BAMAZON.png"
+      "imgurl": "images/portfolio/BAMAZON.png",
+      "url": "https://github.com/emartey/bamazon"
     }
   ],
   "testimonials": [

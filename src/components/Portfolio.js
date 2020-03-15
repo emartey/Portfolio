@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Fade from 'react-reveal/Fade';
-// "twelve columns collapsed"
 export default class Porfolio extends Component {
   render() {
     let resumeData = this.props.resumeData;
@@ -18,12 +17,23 @@ export default class Porfolio extends Component {
                     resumeData.portfolio && resumeData.portfolio.map((item) => {
                       return (
                         <li>
-                          <img src={`${item.imgurl}`} className="item-img" alt="" />
-                          <p>
-                            {item.description}
-                          </p>
-                          <cite>{item.name}</cite>
-
+                          <div className="columns portfolio-item">
+                            <div className="item-wrap text-center">
+                              <a href={item.url} onClick={() => window.location.href = `${item.url}`} target="_blank" rel="noopener noreferrer">
+                                <img src={`${item.imgurl}`} className="item-img" alt="" />
+                                <p>
+                                  <cite>{item.name}</cite>
+                                </p>
+                                {/* {item.description} */}
+                                <div className="overlay">
+                                  <div className="portfolio-item-meta">
+                                    <h5>{item.name}</h5>
+                                    <p>{item.description}</p>
+                                  </div>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
                         </li>
                       )
                     })
