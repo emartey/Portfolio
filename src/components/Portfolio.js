@@ -8,7 +8,7 @@ export default class Porfolio extends Component {
         <div className="text-container">
           <div className="row">
             <div className="twelve columns collapsed">
-              <h1><span>Check Out Some of Work</span></h1>
+              <h1><span>Check Out Some of My Work</span></h1>
             </div>
             <div className="ten columns flex-container">
               <div className="flexslider">

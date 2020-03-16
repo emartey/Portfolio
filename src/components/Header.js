@@ -1,11 +1,29 @@
 import React, { Component } from 'react';
+import * as THREE from 'three'
+import GLOBE from 'vanta/dist/vanta.globe.min'
+
 export default class Header extends Component {
+  constructor() {
+    super()
+    this.vantaRef = React.createRef()
+  }
+  componentDidMount() {
+    this.vantaEffect = GLOBE({
+      el: this.vantaRef.current,
+      color: 0x13b1bb,
+      backgroundColor: 0x20255,
+      THREE: THREE
+    })
+  }
+  componentWillUnmount() {
+    if (this.vantaEffect) this.vantaEffect.destroy()
+  }
   render() {
     let resumeData = this.props.resumeData;
     return (
       <React.Fragment>
 
-        <header id="home">
+        <header id="home" ref={this.vantaRef}>
           <nav id="nav-wrap">
             <a className="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
             <a className="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>

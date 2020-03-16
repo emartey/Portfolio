@@ -7,31 +7,37 @@ export default class Testimonials extends Component {
       <section id="testimonials"><Fade bottom>
         <div className="text-container">
           <div className="row">
-            <div className="two columns header-col">
-              <h1><span>Client Testimonials</span></h1>
-            </div>
-            <div className="ten columns flex-container">
-              <div className="flexslider">
-                <ul className="slides">
-                  {
-                    resumeData.testimonials && resumeData.testimonials.map((item) => {
-                      return (
-                        <li>
-                          <blockquote>
-                            <p>
-                              Feel free to contact me for any work or suggestions below
+            <div className="twelve columns">
+              <blockquote>
+                <p className="contactme text-center">
+                  Feel free to contact me or review out more of my work at the links below
                             </p>
-                            <h4>Linked in :
+                {/* <h4 class="text-center">Linked in :
                   {resumeData.linkedinId}
-                            </h4>
-                          </blockquote>
-                        </li>
-                      )
-                    })
-                  }
-                </ul>
-              </div> {/* div.flexslider ends */}
+                </h4> */}
+              </blockquote>
             </div> {/* div.flex-container ends */}
+            <footer>
+              <div className="row">
+                <div className="twelve columns">
+                  <ul className="social-links">
+                    {
+                      resumeData.socialLinks && resumeData.socialLinks.map((item) => {
+                        return (
+                          <li>
+                            <a href={item.url}>
+                              <i className={item.className} />
+                            </a>
+                          </li>
+                        )
+                      })
+                    }
+                  </ul>
+
+                </div>
+                {/* <div id="go-top"><a className="smoothscroll" title="Back to Top" href="#home"><i className="icon-up-open" /></a></div> */}
+              </div>
+            </footer>
           </div> {/* row ends */}
         </div>  {/* text-container ends */}
       </Fade></section>
