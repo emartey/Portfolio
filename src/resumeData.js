@@ -48,7 +48,7 @@ let resumeData = {
       "specialization": "Account Executive",
       "MonthOfLeaving": "DECEMBER 2018",
       "YearOfLeaving": " - PRESENT",
-      "Achievements": "Some Achievements"
+      "Achievements": "Worked with businesses to install or enhance employee benefits packages. Maintained and managed existing clientele, utilizing a variety of different platforms and applications. Built a robust catalog and book of business with local business owners, helping many businesses install lifesaving plans improving the lives of at least 70% of employees."
     }
   ],
   "skillsDescription": "Programming Languages: HTML5, CSS, Sass, JavaScript/JSX, JSON, XML, Java, SQL, ReactJS, NodeJS, jQuery, Bootstrap, Handlebars.js, Express.js, Sequelize, MySQL, MongoDB, Firebase, Git, MVC, ORMs",
@@ -66,21 +66,21 @@ let resumeData = {
   "portfolio": [
     {
       "name": "KOLLAB",
-      "description": "mobileapp",
+      "description": "• Event planner application, connecting vendors to consumer. Collaboration project.",
       "imgurl": "images/portfolio/KOLLAB.png",
       "url": "https://github.com/emartey/project-3/tree/edward-branch"
 
     },
     {
       "name": "Dragon Ball Universe Trivia",
-      "description": "mobileapp",
+      "description": "•	Dragonball Universe Trivia game made using JavaScript and jQuery.",
       "imgurl": "images/portfolio/DragonBall.png",
       "url": "https://github.com/emartey/TriviaGame"
 
     },
     {
       "name": "BAMAZON",
-      "description": "mobileapp",
+      "description": "•	Bamazon is a webstore database command application.",
       "imgurl": "images/portfolio/BAMAZON.png",
       "url": "https://github.com/emartey/bamazon"
     }
