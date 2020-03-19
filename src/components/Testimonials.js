@@ -1,15 +1,29 @@
 import React, { Component } from 'react';
 import Fade from 'react-reveal/Fade';
 import axios from 'axios';
+import AddTripButton from "./ContactUs";
+import "./style.css";
+
 export default class Testimonials extends Component {
   constructor(props) {
     super(props);
     this.state = {
       name: '',
       email: '',
-      message: ''
+      message: '',
+      isEmptyState: true,
+      isAddTripState: false
     }
   }
+
+  triggerAddTripState = () => {
+    this.setState({
+      ...this.state,
+      isEmptyState: false,
+      isAddTripState: true
+    });
+  };
+
 
   handleSubmit(e) {
     e.preventDefault();
@@ -74,26 +88,32 @@ export default class Testimonials extends Component {
                       })
                     }
                   </ul>
+                  {this.state.isEmptyState && (
+                    <AddTripButton addTrip={this.triggerAddTripState} />
+                  )}
+
+                  {!this.state.isEmptyState && (
+                    <form class="text-center" id="contact-form" onSubmit={this.handleSubmit.bind(this)} method="POST">
+                      <div className="form-group">
+                        <label htmlFor="name">Name</label>
+                        <input type="text" className="form-control" id="name" value={this.state.name} onChange={this.onNameChange.bind(this)} />
+                      </div>
+                      <div className="form-group">
+                        <label htmlFor="exampleInputEmail1">Email address</label>
+                        <input type="email" className="form-control" id="email" aria-describedby="emailHelp" value={this.state.email} onChange={this.onEmailChange.bind(this)} />
+                      </div>
+                      <div className="form-group">
+                        <label htmlFor="message">Message</label>
+                        <textarea className="form-control" rows="5" id="message" value={this.state.message} onChange={this.onMessageChange.bind(this)} />
+                      </div>
+                      <button type="submit" className="btn btn-primary">Submit</button>
+                    </form>
+                  )}
 
                 </div>
                 {/* <div id="go-top"><a className="smoothscroll" title="Back to Top" href="#home"><i className="icon-up-open" /></a></div> */}
               </div>
             </footer>
-            {/* <form id="contact-form" onSubmit={this.handleSubmit.bind(this)} method="POST">
-              <div className="form-group">
-                <label htmlFor="name">Name</label>
-                <input type="text" className="form-control" id="name" value={this.state.name} onChange={this.onNameChange.bind(this)} />
-              </div>
-              <div className="form-group">
-                <label htmlFor="exampleInputEmail1">Email address</label>
-                <input type="email" className="form-control" id="email" aria-describedby="emailHelp" value={this.state.email} onChange={this.onEmailChange.bind(this)} />
-              </div>
-              <div className="form-group">
-                <label htmlFor="message">Message</label>
-                <textarea className="form-control" rows="5" id="message" value={this.state.message} onChange={this.onMessageChange.bind(this)} />
-              </div>
-              <button type="submit" className="btn btn-primary">Submit</button>
-            </form> */}
           </div> {/* row ends */}
         </div>  {/* text-container ends */}
       </Fade></section>
