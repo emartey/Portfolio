@@ -5,12 +5,15 @@
   "private": true,
   "dependencies": {
     "axios": "^0.19.2",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
     "fittext": "^1.0.1",
     "flexslider": "^2.7.2",
     "init": "^0.1.2",
     "jquery": "^3.4.1",
     "magnific-popup": "^1.1.0",
     "migrate": "^1.6.2",
+    "nodemailer": "^6.4.5",
     "react": "^16.6.0",
     "react-dom": "^16.6.0",
     "react-reveal": "^1.2.2",
@@ -35,5 +38,8 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "css-loader": "^3.4.2"
+  }
 }

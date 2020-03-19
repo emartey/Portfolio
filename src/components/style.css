@@ -1,5 +1,13 @@
 .form-control{
-    min-width: 370px;
-    margin-right: 322px;
+    min-width: 472px;
+    margin-left: 267px;
+}
 
+label, legend{
+    margin-left: -1%;
+    color: #ffffff
+}
+
+form{
+    margin-left: 1%;
 }
