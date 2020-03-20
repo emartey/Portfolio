@@ -33,8 +33,12 @@ export default class Testimonials extends Component {
 
   handleCancel() {
     this.setState({
+      ...this.state,
+      isEmptyState: true,
+      isAddTripState: false,
       message: ''
     });
+
   }
 
   handleChange(event) {
