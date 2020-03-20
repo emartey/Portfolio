@@ -1,104 +1,108 @@
 import React, { Component } from 'react';
 import Fade from 'react-reveal/Fade';
-// import AddTripButton from "./ContactUs";
+// import axios from 'axios';
+import AddTripButton from "./ContactUs";
 import "./style.css";
+import PropTypes from 'prop-types';
 
-class Testimonials extends Component {
-  // constructor(props) {
-  //   super(props);
-  //   this.state = {
-  //     name: '',
-  //     email: '',
-  //     message: '',
-  //     isEmptyState: true,
-  //     isAddTripState: false
-  //   }
-  // }
+export default class Testimonials extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      name: '',
+      email: '',
+      message: '',
+      isEmptyState: true,
+      isAddTripState: false
+    }
+  }
 
-  // triggerAddTripState = () => {
-  //   this.setState({
-  //     ...this.state,
-  //     isEmptyState: false,
-  //     isAddTripState: true
-  //   });
-  // };
+  triggerAddTripState = () => {
+    this.setState({
+      ...this.state,
+      isEmptyState: false,
+      isAddTripState: true
+    });
+  };
 
-  // handleCancel = this.handleCancel.bind(this);
-  // handleChange = this.handleChange.bind(this);
-  // handleSubmit = this.handleSubmit.bind(this);
+  handleCancel = this.handleCancel.bind(this);
+  handleChange = this.handleChange.bind(this);
+  handleSubmit = this.handleSubmit.bind(this);
 
-  // static sender = 'sender@example.com';
+  static sender = 'sender@example.com';
 
-  // handleCancel() {
-  //   this.setState({
-  //     feedback: ''
-  //   });
-  // }
+  handleCancel() {
+    this.setState({
+      message: ''
+    });
+  }
 
-  // handleChange(event) {
-  //   this.setState({
-  //     feedback: event.target.value
-  //   });
-  // }
+  handleChange(event) {
+    this.setState({
+      message: event.target.value
+    });
+  }
 
-  // handleSubmit(event) {
-  //   event.preventDefault();
+  handleSubmit(event) {
+    event.preventDefault();
 
-  //   const {
-  //     REACT_APP_EMAILJS_RECEIVER: receiverEmail,
-  //     REACT_APP_EMAILJS_TEMPLATEID: template,
-  //     REACT_APP_EMAILJS_USERID: user,
-  //   } = this.props.env;
+    const {
+      REACT_APP_EMAILJS_RECEIVER: receiverEmail,
+      REACT_APP_EMAILJS_TEMPLATEID: template,
+      REACT_APP_EMAILJS_USERID: user,
+    } = this.props.env;
 
-  //   this.sendFeedback(
-  //     template,
-  //     this.sender,
-  //     receiverEmail,
-  //     this.state.feedback,
-  //     user
-  //   );
+    this.sendFeedback(
+      template,
+      this.sender,
+      receiverEmail,
+      this.state.message,
+      user
+    );
 
-  //   this.setState({
-  //     formSubmitted: true
-  //   });
-  // }
+    this.setState({
+      formSubmitted: true
+    });
+  }
 
-  // // Note: this is using default_service, which will map to whatever
-  // // default email provider you've set in your EmailJS account.
-  // sendFeedback(templateId, senderEmail, receiverEmail, feedback, user) {
-  //   window.emailjs
-  //     .send('default_service', templateId, {
-  //       senderEmail,
-  //       receiverEmail,
-  //       feedback
-  //     },
-  //       user
-  //     )
-  //     .then(res => {
-  //       this.setState({
-  //         formEmailSent: true
-  //       });
-  //     })
-  //     // Handle errors here however you like
-  //     .catch(err => console.error('Failed to send feedback. Error: ', err));
-  // }
+  // Note: this is using default_service, which will map to whatever
+  // default email provider you've set in your EmailJS account.
+  sendFeedback(templateId, senderEmail, receiverEmail, message, user) {
+    window.emailjs
+      .send('default_service', templateId, {
+        senderEmail,
+        receiverEmail,
+        message
+      },
+        user
+      )
+      .then(res => {
+        console.log('MAIL SENT!')
+        alert("Mail Sent")
+        this.setState({
+          formEmailSent: true
+        });
+      })
+      // Handle errors here however you like
+      .catch(err => console.error('Failed to send message. Error: ', err));
+  }
 
 
-  // resetForm() {
+  resetForm() {
 
-  //   this.setState({ name: "", email: "", message: "" })
-  // }
-  // onNameChange(event) {
-  //   this.setState({ name: event.target.value })
-  // }
+    this.setState({ name: "", email: "", message: "" })
+  }
+  onNameChange(event) {
+    this.setState({ name: event.target.value })
+  }
 
-  // onEmailChange(event) {
-  //   this.setState({ email: event.target.value })
-  // }
+  onEmailChange(event) {
+    this.setState({ email: event.target.value })
+  }
 
-  // onMessageChange(event) {
-  //   this.setState({ message: event.target.value })
-  // }
+  onMessageChange(event) {
+    this.setState({ message: event.target.value })
+  }
   render() {
     let resumeData = this.props.resumeData;
     return (
@@ -131,12 +135,12 @@ class Testimonials extends Component {
                       })
                     }
                   </ul>
-                  {/* {this.state.isEmptyState && (
+                  {this.state.isEmptyState && (
                     <AddTripButton addTrip={this.triggerAddTripState} />
                   )}
 
                   {!this.state.isEmptyState && (
-                    <form class="text-center" id="contact-form" noValidate onSubmit={this.handleSubmit.bind(this)} method="POST">
+                    <form class="text-center" id="contact-form" required onSubmit={this.handleSubmit}>
                       <div className="form-group">
                         <label htmlFor="name">Name</label>
                         <input type="text" className="form-control" placeholder="Enter Your Name" id="name" value={this.state.name} onChange={this.onNameChange.bind(this)} />
@@ -147,11 +151,16 @@ class Testimonials extends Component {
                       </div>
                       <div className="form-group">
                         <label htmlFor="message">Message</label>
-                        <textarea className="form-control" placeholder="Enter Your Message. Don't be shy, be nice!" rows="5" id="message" value={this.state.message} onChange={this.onMessageChange.bind(this)} />
+                        <textarea className="form-control" placeholder="Enter Your Message. Don't be shy, be nice!" rows="5" id="message" value={this.state.message} onChange={this.handleChange} />
                       </div>
-                      <button type="submit" className="btn btn-primary">Submit</button>
+                      <div className="btn-group">
+                        <button type="submit" className="btn btn-primary">Submit</button>
+                        <button className="btn btn--cancel" onClick={this.handleCancel}>
+                          Cancel
+                        </button>
+                      </div>
                     </form>
-                  )} */}
+                  )}
 
                 </div>
                 {/* <div id="go-top"><a className="smoothscroll" title="Back to Top" href="#home"><i className="icon-up-open" /></a></div> */}
@@ -164,4 +173,8 @@ class Testimonials extends Component {
   }
 }
 
-export default Testimonials
+Testimonials.propTypes = {
+  env: PropTypes.object.isRequired
+};
+
+// export default Testimonials

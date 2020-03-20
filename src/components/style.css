@@ -11,3 +11,7 @@ label, legend{
 form{
     margin-left: 1%;
 }
+
+.btn.btn-primary{
+   margin-right: 7%; 
+}

@@ -7,6 +7,8 @@ import Testimonials from './components/Testimonials';
 // import ContactUs from './components/ContactUs';
 import Footer from './components/Footer';
 import resumeData from './resumeData';
+import PropTypes from 'prop-types';
+
 class App extends Component {
   render() {
     return (
@@ -15,12 +17,16 @@ class App extends Component {
         <About resumeData={resumeData} />
         <Resume resumeData={resumeData} />
         <Portfolio resumeData={resumeData} />
-        <Testimonials resumeData={resumeData} />
+        <Testimonials resumeData={resumeData} env={this.props.env} />
         {/* <ContactUs resumeData={resumeData}/> */}
         <Footer resumeData={resumeData} />
       </div>
     );
   }
 }
+
+App.propTypes = {
+  env: PropTypes.object.isRequired
+};
 
 export default App;
