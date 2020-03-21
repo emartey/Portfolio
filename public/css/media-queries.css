@@ -350,7 +350,7 @@
    /* footer
    ------------------------------------------------------------------------ */
   footer{
-     padding-top: 0%;
+     padding-top: 5%;
   }
    /* copyright */
    footer .copyright li:before { content: none; }
