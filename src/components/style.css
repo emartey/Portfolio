@@ -15,3 +15,32 @@ form{
 .btn.btn-primary{
    margin-right: 7%; 
 }
+
+.ten.columns.flex-container{
+    margin-right: 9%;
+}
+
+li.BAMAZON.flex-active-slide{
+    margin-left: 1.35%;
+}
+
+cite.KOLLAB{
+    margin-right: -2%;
+}
+
+cite.BAMAZON{
+    margin-right: 5%;
+}
+
+.flex-control-nav{
+    margin-left: -1.4999%;
+}
+
+.flex-control-paging li a{
+background-color: #95A3A3;
+}
+
+.flex-control-paging li a.flex-active {
+    background-color: #11ABB0;
+}
+

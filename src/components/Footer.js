@@ -19,7 +19,7 @@ export default class Footer extends Component {
               })
             }
           </ul> */}
-            <div class="content has-text-centered">
+            <div className="content has-text-centered">
               <p>
                 <strong>My Portfolio</strong> by <a href="https://github.com/emartey">Edward Martey</a>
               </p>

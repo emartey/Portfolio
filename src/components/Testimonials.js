@@ -4,16 +4,19 @@ import Fade from 'react-reveal/Fade';
 import AddTripButton from "./ContactUs";
 import "./style.css";
 import PropTypes from 'prop-types';
+// import emailjs from 'emailjs-com';
+
 
 export default class Testimonials extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      name: '',
-      email: '',
       message: '',
+      personName: '',
+      personEmail: '',
       isEmptyState: true,
-      isAddTripState: false
+      isAddTripState: false,
+      formSubmitted: false
     }
   }
 
@@ -42,9 +45,11 @@ export default class Testimonials extends Component {
   }
 
   handleChange(event) {
-    this.setState({
-      message: event.target.value
-    });
+    this.setState(
+      { message: event.target.value },
+      { personName: event.target.value },
+      { personEmail: event.target.value }
+    );
   }
 
   handleSubmit(event) {
@@ -60,7 +65,9 @@ export default class Testimonials extends Component {
       template,
       this.sender,
       receiverEmail,
-      this.state.message,
+      this.refs.message.value,
+      this.refs.personName.value,
+      this.refs.personEmail.value,
       user
     );
 
@@ -71,12 +78,14 @@ export default class Testimonials extends Component {
 
   // Note: this is using default_service, which will map to whatever
   // default email provider you've set in your EmailJS account.
-  sendFeedback(templateId, senderEmail, receiverEmail, message, user) {
+  sendFeedback(templateId, senderEmail, receiverEmail, message, personName, personEmail, user) {
     window.emailjs
       .send('default_service', templateId, {
         senderEmail,
         receiverEmail,
-        message
+        message,
+        personName,
+        personEmail
       },
         user
       )
@@ -92,21 +101,11 @@ export default class Testimonials extends Component {
   }
 
 
-  resetForm() {
+  // resetForm() {
 
-    this.setState({ name: "", email: "", message: "" })
-  }
-  onNameChange(event) {
-    this.setState({ name: event.target.value })
-  }
+  //   this.setState({ name: "", email: "", message: "" })
+  // }
 
-  onEmailChange(event) {
-    this.setState({ email: event.target.value })
-  }
-
-  onMessageChange(event) {
-    this.setState({ message: event.target.value })
-  }
   render() {
     let resumeData = this.props.resumeData;
     return (
@@ -144,21 +143,21 @@ export default class Testimonials extends Component {
                   )}
 
                   {!this.state.isEmptyState && (
-                    <form class="text-center" id="contact-form" required onSubmit={this.handleSubmit}>
+                    <form className="text-center" id="contact-form" required onSubmit={this.handleSubmit}>
                       <div className="form-group">
                         <label htmlFor="name">Name</label>
-                        <input type="text" className="form-control" placeholder="Enter Your Name" id="name" value={this.state.name} onChange={this.onNameChange.bind(this)} />
+                        <input type="text" className="form-control" placeholder="Enter Your Name" id="personName" ref="personName" />
                       </div>
                       <div className="form-group">
                         <label htmlFor="exampleInputEmail1">Email address</label>
-                        <input type="email" className="form-control" placeholder="Enter email" id="email" aria-describedby="emailHelp" value={this.state.email} onChange={this.onEmailChange.bind(this)} />
+                        <input type="email" className="form-control" placeholder="Enter email" id="personEmail" ref="personEmail" aria-describedby="emailHelp" />
                       </div>
                       <div className="form-group">
                         <label htmlFor="message">Message</label>
-                        <textarea className="form-control" placeholder="Enter Your Message. Don't be shy, be nice!" rows="5" id="message" value={this.state.message} onChange={this.handleChange} />
+                        <textarea className="form-control" placeholder="Enter Your Message. Don't be shy, be nice!" rows="5" id="message" ref="message" />
                       </div>
                       <div className="btn-group">
-                        <button type="submit" className="btn btn-primary">Submit</button>
+                        <button type="submit" className="btn btn-primary" >Submit</button>
                         <button className="btn btn--cancel" onClick={this.handleCancel}>
                           Cancel
                         </button>
