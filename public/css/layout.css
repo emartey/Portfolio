@@ -287,6 +287,15 @@ ul#nav li.current a { color: blue; }
 /*----------------------------------------------*/
 /*	Skill Bars
 /*----------------------------------------------*/
+input.form-control{
+    min-width: 370px;
+    margin-left: 320px;    
+
+}
+
+li.BAMAZON.flex-active-slide{
+    margin-left: 1.35%;
+}
 
 .bars {
 	width: 95%;
@@ -755,6 +764,7 @@ call-to-action .button {
     position: absolute;
     bottom: -20px;
     text-align: left;
+    margin-left: -2.4999%;
 }
 .flex-control-nav li {
     margin: 0 6px;

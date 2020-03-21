@@ -10,6 +10,7 @@
     "express": "^4.17.1",
     "fittext": "^1.0.1",
     "flexslider": "^2.7.2",
+    "gh-pages": "^2.2.0",
     "init": "^0.1.2",
     "jquery": "^3.4.1",
     "magnific-popup": "^1.1.0",

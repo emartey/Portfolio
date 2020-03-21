@@ -19,6 +19,7 @@
       margin: 0 auto 12px auto;
    }
 
+
 }
 
 /* screenwidth less than 900px
@@ -64,6 +65,24 @@
 
    /* Testimonials Section
    ------------------------------------------------------------------- */
+   #testimonials input,
+   #testimonials textarea,
+   input.form-control {
+     	margin-bottom: 6px;    	
+      width: 100%;
+      min-width: 370px;
+      margin-left: 0%;    
+   }
+
+   .flex-control-nav {
+    /* margin-left: -5.4999%; */
+    display: none;
+   }
+
+   li.BAMAZON.flex-active-slide{
+    margin-left: 0.5%;
+}
+  
    #testimonials .header-col h1:before {
       font-size: 66px;
       line-height: 66px;
@@ -112,10 +131,10 @@
 	   width: 48px;
 		height: 48px;
 		text-align: left;
-		background-color: #CC5200;
+		background-color: #11ABB0;
 		position: relative;
       border: none;
-      float: right;
+      float: left;
 
       font: 0/0 a;
       text-shadow: none;
@@ -123,7 +142,6 @@
 
       position: relative;
       top: 0px;
-      right: 30px;
    }
 
 	#nav-wrap > a:before,
@@ -260,7 +278,21 @@
 
    /* Testimonials Section
    ----------------------------------------------------------------------- */
-   #testimonials .text-container { text-align: center; }
+   .flexslider{margin-left: 4%;}
+   .flex-control-nav {
+    /* margin-left: -5.4999%; */
+    display: none;
+   }
+ 
+    li.BAMAZON.flex-active-slide {
+    margin-left: 0.35%;
+   }  
+   
+    #testimonials .text-container { 
+      text-align: center;
+   padding-top: 20px;
+    padding-bottom: 0px;
+   }
    #testimonials h1 {
       font: 16px/24px 'opensans-bold', sans-serif;
       text-align: center;
@@ -272,7 +304,9 @@
    #testimonials blockquote { padding-bottom: 24px; }
    #testimonials blockquote p {
       font-size: 20px;
-      line-height: 42px;      
+      line-height: 42px;
+      padding-bottom: 0%;
+    margin-bottom: -18%;      
    }
 
    /* Control Nav */
@@ -302,22 +336,22 @@
       float: none;
       width: 100%;
    }
-   #contact input,
-   #contact textarea,
-   #contact select {
+   #testimonials input,
+   #testimonials textarea,
+   input.form-control {
      	margin-bottom: 6px;    	
       width: 100%;
+      min-width: 370px;
+      margin-left: 0%;    
    }
-   #contact button.submit { margin: 30px 0 24px 0; }
-   #message-warning, #message-success {
-      width: 100%;
-      margin-left: 0;
-   }
+
 
 
    /* footer
    ------------------------------------------------------------------------ */
-  
+  footer{
+     padding-top: 0%;
+  }
    /* copyright */
    footer .copyright li:before { content: none; }
    footer .copyright li { margin-right: 12px; }
