@@ -340,11 +340,14 @@
    #testimonials textarea,
    input.form-control {
      	margin-bottom: 6px;    	
-      width: 100%;
-      min-width: 370px;
-      margin-left: 0%;    
+      width: 97%;
+      min-width: 318px;
+      margin-left: 1%   
    }
 
+   .row .twelve {
+    margin-top: 5%;
+}
 
 
    /* footer
