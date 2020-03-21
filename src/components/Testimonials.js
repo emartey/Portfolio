@@ -1,11 +1,8 @@
 import React, { Component } from 'react';
 import Fade from 'react-reveal/Fade';
-// import axios from 'axios';
 import AddTripButton from "./ContactUs";
 import "./style.css";
 import PropTypes from 'prop-types';
-// import emailjs from 'emailjs-com';
-
 
 export default class Testimonials extends Component {
   constructor(props) {
@@ -93,18 +90,14 @@ export default class Testimonials extends Component {
         console.log('MAIL SENT!')
         alert("Mail Sent")
         this.setState({
+          isEmptyState: true,
+          isAddTripState: false,
           formEmailSent: true
         });
       })
       // Handle errors here however you like
       .catch(err => console.error('Failed to send message. Error: ', err));
   }
-
-
-  // resetForm() {
-
-  //   this.setState({ name: "", email: "", message: "" })
-  // }
 
   render() {
     let resumeData = this.props.resumeData;
