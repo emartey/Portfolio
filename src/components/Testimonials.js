@@ -122,7 +122,7 @@ export default class Testimonials extends Component {
                     {
                       resumeData.socialLinks && resumeData.socialLinks.map((item) => {
                         return (
-                          <li>
+                          <li class="footerBtnWrapper">
                             <a href={item.url}>
                               <i className={item.className} />
                             </a>

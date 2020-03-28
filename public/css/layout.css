@@ -294,7 +294,7 @@ input.form-control{
 }
 
 li.BAMAZON.flex-active-slide{
-    margin-left: 1.35%;
+    margin-left: 1.1%;
 }
 
 .bars {
@@ -424,7 +424,7 @@ li.BAMAZON.flex-active-slide{
 
 #portfolio {
    background: #ebeeee;
-   padding-top: 90px;
+   padding-top: 60px;
    padding-bottom: 60px;
 }
 #portfolio h1 {
@@ -764,7 +764,7 @@ call-to-action .button {
     position: absolute;
     bottom: -20px;
     text-align: left;
-    margin-left: -2.4999%;
+    margin-left: -0.9%;
 }
 .flex-control-nav li {
     margin: 0 6px;
@@ -973,6 +973,45 @@ footer .copyright  li:first-child:before {
     display: none;
 }
 
+.footerBtnWrapper {
+    border: 2px solid #FFFFFF;
+    margin: 18px 10px 0 0;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    position: relative;
+}
+
+.fa {
+    padding: 10%
+}
+
+.fa.fa-github{
+    padding: 12%;
+    padding-left: 10%;
+    margin-left: 5.5%;
+}
+
+a.BAMAZON {
+   margin-left: -7%
+}
+
+cite.Dragon.Ball.Universe.Trivia{
+    margin-right: -3%;
+}
+
+cite.KOLLAB, cite.BAMAZON{
+    margin-right: -4%;
+}
+
+cite.BAMAZON{
+    margin-right: 2%;
+}
+
+i#BAMAZON{
+    margin-left: 7%;
+}
+
 /* social links */
 footer .social-links {
    margin: 18px 0 30px 0;
@@ -998,10 +1037,24 @@ p.contactme{
 /* Go To Top Button */
 #go-top {
 	position: absolute;
-	top: -24px;
+	top: -77px;
    left: 50%;
    margin-left: -30px;
 }
+
+#reactLogoRotate {
+    animation: rotation 10s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
 #go-top a {
 	text-decoration: none;
 	border: 0 none;

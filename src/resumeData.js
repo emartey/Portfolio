@@ -3,6 +3,7 @@ let resumeData = {
   "name": "Edward Martey",
   "role": "Web Developer",
   "linkedinId": " https://www.linkedin.com/in/emartey/",
+  "gitHub": " https://github.com/emartey",
   "roleDescription": " Junior Web Developer who loves to tinker and work on new projects. Let's code!",
   "socialLinks": [
     {
@@ -66,23 +67,32 @@ let resumeData = {
   "portfolio": [
     {
       "name": "KOLLAB",
-      "description": "• Event planner application, connecting vendors to consumer. Collaboration project.",
+      "description": "• Event planner application, connecting vendors to consumer. Full stack app. Collaboration project.",
       "imgurl": "images/portfolio/KOLLAB.png",
-      "url": "https://github.com/emartey/project-3/tree/edward-branch"
+      "url": "https://github.com/emartey/project-3/tree/edward-branch",
+      "className": "fa fa-github fa-w-16 fa-2x"
 
     },
     {
       "name": "Dragon Ball Universe Trivia",
       "description": "•	Dragonball Universe Trivia game made using JavaScript and jQuery.",
       "imgurl": "images/portfolio/DragonBall.png",
-      "url": "https://github.com/emartey/TriviaGame"
-
+      "url": "https://github.com/emartey/TriviaGame",
+      "className": "DragonBall fa fa-github fa-w-16 fa-2x"
     },
     {
       "name": "BAMAZON",
       "description": "•	Bamazon is a webstore database command application.",
       "imgurl": "images/portfolio/BAMAZON.png",
-      "url": "https://github.com/emartey/bamazon"
+      "url": "https://github.com/emartey/bamazon",
+      "className": "fa fa-github fa-w-16 fa-2x"
+    },
+    {
+      "name": "Reuters News Scraper",
+      "description": "•	Full stack news scraper application.",
+      "imgurl": "images/portfolio/NewsScrape.png",
+      "url": "https://github.com/emartey/News-Scrape",
+      "className": "NewsScrape fa fa-github fa-w-16 fa-2x"
     }
   ],
   "testimonials": [

@@ -251,7 +251,7 @@
    }
    #resume h1 { letter-spacing: 3px; }
    #resume .main-col { padding-right: 30px; }
-   #resume h3, #resume .info { text-align: center; }
+   #resume h3, #resume .info,  #about h2, p { text-align: center; }
       
    .bars { width: 100%; }
 
@@ -309,6 +309,30 @@
     margin-bottom: -18%;      
    }
 
+   cite.BAMAZON {
+    margin-right: 2%;
+}
+
+cite.KOLLAB {
+    margin-right: -1%;
+}
+
+i#KOLLAB, i.DragonBall.fa.fa-github.fa-w-16.fa-2x, i#BAMAZON.fa.fa-github.fa-w-16.fa-2x, i.NewsScrape.fa.fa-github.fa-w-16.fa-2x{
+    padding: 8.5%;
+    padding-left: 0%;
+    margin-left: 12%
+}   
+
+.fa.fa-github {
+    padding: 21.5%;
+    padding-left: 15%;
+   }
+
+.fa.fa-linkedin {
+   padding: 22%;
+}
+
+
    /* Control Nav */
    .flex-control-nav {
       text-align: center;
@@ -346,7 +370,7 @@
    }
 
    .row .twelve {
-    margin-top: 5%;
+    margin-top: 1%;
 }
 
 
@@ -364,7 +388,7 @@
    footer .social-links li { margin-left: 18px; }
 
    /* Go To Top Button */
-   #go-top { margin-left: -22px; }
+   #go-top { margin-left: -30px; top: -27%; }
    #go-top a {
    	width: 54px;
    	height: 54px;

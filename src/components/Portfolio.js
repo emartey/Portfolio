@@ -19,19 +19,23 @@ export default class Porfolio extends Component {
                         <li className={`${item.name}`}>
                           <div className="columns portfolio-item">
                             <div className="item-wrap text-center">
-                              <a href={item.url} onClick={() => window.location.href = `${item.url}`} target="_blank" rel="noopener noreferrer">
-                                <img src={`${item.imgurl}`} className="item-img" alt="" />
-                                <p>
-                                  <cite className={`${item.name}`}>{item.name}</cite>
-                                </p>
-                                {/* {item.description} */}
-                                <div className="overlay">
-                                  <div className="portfolio-item-meta">
-                                    <h5>{item.name}</h5>
-                                    <p>{item.description}</p>
-                                  </div>
-                                </div>
+                              <img src={`${item.imgurl}`} className="item-img" alt="" />
+                              <p>
+                                <cite className={`${item.name}`}>{item.name}</cite>
+                              </p>
+                              {item.description}
+                              <br></br>
+                              <br></br>
+                              Take a closer look at this app by clicking the link below
+                              <a className={item.name} href={item.url} onClick={() => window.location.href = `${item.url}`} target="_blank" rel="noopener noreferrer">
+                                <i className={item.className} id={item.name} />
                               </a>
+                              {/* <div className="overlay">
+                                <div className="portfolio-item-meta">
+                                  <h5>{item.name}</h5>
+                                  <p>{item.description}</p>
+                                </div>
+                              </div> */}
                             </div>
                           </div>
                         </li>

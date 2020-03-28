@@ -36,7 +36,24 @@ export default class About extends Component {
                            <span>
                               <a href={resumeData.linkedinId}>LinkedIn Profile</a>
                            </span>
+                           <br></br>
+                           <span>
+                              <a href={resumeData.gitHub}>Github Profile</a>
+                           </span>
                         </p>
+                        {/* <ul className="social-links">
+                           {
+                              resumeData.socialLinks && resumeData.socialLinks.map((item) => {
+                                 return (
+                                    <li>
+                                       <a href={item.url}>
+                                          <i className={item.className} />
+                                       </a>
+                                    </li>
+                                 )
+                              })
+                           }
+                        </ul> */}
                      </div>
                   </div>
                </div>

@@ -24,8 +24,23 @@ export default class Footer extends Component {
                 <strong>My Portfolio</strong> by <a href="https://github.com/emartey">Edward Martey</a>
               </p>
             </div>
+            <div>
+              <div class="builtWithCont">
+                <div class="builtWithWrap">
+                  <p>Built With React</p>
+                </div>
+              </div>
+              <div id="reactFooter">
+                <div class="footerAnchorIcons">
+                  <img src="images/reactICON.png" alt="React Logo" id="reactLogoRotate">
+                  </img>
+                </div>
+              </div>
+            </div>
+            <div id="go-top">
+              <a className="smoothscroll" title="Back to Top" href="#home"><i className="icon-up-open" /></a>
+            </div>
           </div>
-          <div id="go-top"><a className="smoothscroll" title="Back to Top" href="#home"><i className="icon-up-open" /></a></div>
         </div>
       </footer>
     );
