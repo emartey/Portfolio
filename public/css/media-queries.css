@@ -278,15 +278,23 @@
 
    /* Testimonials Section
    ----------------------------------------------------------------------- */
-   .flexslider{margin-left: 4%;}
+   .flexslider{margin-left: 7%;}
    .flex-control-nav {
     /* margin-left: -5.4999%; */
     display: none;
    }
  
     li.BAMAZON.flex-active-slide {
-    margin-left: 0.35%;
+    margin-left: -0.01%;
    }  
+
+   .flex-viewport {
+    margin-left: 2%;
+   }  
+
+   /* li.Reuters.News.Scraper.flex-active-slide {
+      width: 277px;
+   } */
    
     #testimonials .text-container { 
       text-align: center;
