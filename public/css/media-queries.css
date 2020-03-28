@@ -233,7 +233,10 @@
 
    /* About Section
    -------------------------------------------------------------------- */
-   #about .profile-pic { display: none; }
+   #about .profile-pic { 
+      margin-left: 35%;
+      margin-top: -21%;
+   }
    #about .download .button {
       width: 100%;
       text-align: center;

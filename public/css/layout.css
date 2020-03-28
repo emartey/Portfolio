@@ -213,6 +213,8 @@ ul#nav li.current a { color: blue; }
    width: 120px;
    height: 120px;
    border-radius: 100%;
+  -webkit-filter: grayscale(100%); 
+   filter: grayscale(100%); 
 }
 #about .contact-details { width: 41.66667%; }
 #about .download {
