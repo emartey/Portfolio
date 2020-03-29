@@ -230,6 +230,9 @@
     /* scrolldown link */
    header .scrolldown { display: none; }
 
+   canvas.vanta-canvas{
+      height: 692px
+   }
 
    /* About Section
    -------------------------------------------------------------------- */
@@ -381,7 +384,8 @@ i#KOLLAB, i.DragonBall.fa.fa-github.fa-w-16.fa-2x, i#BAMAZON.fa.fa-github.fa-w-1
    }
 
    .row .twelve {
-    margin-top: 1%;
+    margin-top: 3%;
+    padding-top: 3%;
 }
 
 

@@ -4,7 +4,7 @@ let resumeData = {
   "role": "Web Developer",
   "linkedinId": " https://www.linkedin.com/in/emartey/",
   "gitHub": " https://github.com/emartey",
-  "roleDescription": " Junior Web Developer who loves to tinker and work on new projects. Let's code!",
+  "roleDescription": " Web Developer who loves to tinker and work on new projects. Let's code!",
   "socialLinks": [
     {
       "name": "linkedin",
