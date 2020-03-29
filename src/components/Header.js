@@ -14,7 +14,7 @@ export default class Header extends Component {
       backgroundColor: 0x20255,
       mouseControls: true,
       touchControls: true,
-      scaleMobile: 0.60,
+      scaleMobile: 1.00,
       THREE: THREE
     })
   }
@@ -43,8 +43,10 @@ export default class Header extends Component {
           <div className="row banner">
             <div className="banner-text">
               <h1 className="responsive-headline">{resumeData.name}</h1>
-              <h3 style={{ color: '#fff', fontFamily: 'sans-serif ' }}>{resumeData.roleDescription}
-              </h3>
+              <div className="overlay">
+                <h3 style={{ color: 'white', fontFamily: 'sans-serif ' }}>{resumeData.roleDescription}
+                </h3>
+              </div>
               <hr />
               <ul className="social">
                 {
