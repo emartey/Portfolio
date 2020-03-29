@@ -71,7 +71,7 @@ header .banner-text h3 {
    color: #A8A8A8;
    margin: 0 auto;
    width: 70%;
-   text-shadow: -2px 1px 0px black;
+   text-shadow: -2px 3px 0px black;
    z-index: 100;
 }
 header .banner-text h3 span,

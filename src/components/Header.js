@@ -12,6 +12,9 @@ export default class Header extends Component {
       el: this.vantaRef.current,
       color: 0x13b1bb,
       backgroundColor: 0x20255,
+      mouseControls: true,
+      touchControls: true,
+      scaleMobile: 0.60,
       THREE: THREE
     })
   }
