@@ -230,7 +230,7 @@
     /* scrolldown link */
    header .scrolldown { display: none; }
 
-   canvas.vanta-canvas{
+   canvas.vanta-canvas.GLOBE{
       height: 692px
    }
 

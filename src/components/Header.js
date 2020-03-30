@@ -10,11 +10,12 @@ export default class Header extends Component {
   componentDidMount() {
     this.vantaEffect = GLOBE({
       el: this.vantaRef.current,
-      color: 0x13b1bb,
+      color: 0xf7eef1,
+      color2: 0x13b1bb,
       backgroundColor: 0x20255,
       mouseControls: true,
       touchControls: true,
-      scaleMobile: 1.00,
+      scaleMobile: 0.60,
       THREE: THREE
     })
   }
