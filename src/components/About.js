@@ -40,6 +40,10 @@ export default class About extends Component {
                            <span>
                               <a href={resumeData.gitHub}>Github Profile</a>
                            </span>
+                           <br></br>
+                           <span>
+                              <a href="images/EdwardMarteyResume.pdf" target="_blank">Resume</a>
+                           </span>
                         </p>
                         {/* <ul className="social-links">
                            {

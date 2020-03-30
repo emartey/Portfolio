@@ -17,7 +17,7 @@ let resumeData = {
       "className": "fa fa-github"
     }
   ],
-  "aboutme": "I am a self taught and technically instructed Full Stack Web Developer, currently diving deeper into the wonderful world of software engineering. I believe that to be successful in life, one needs to be obsessive with their dreams and keep working towards them.",
+  "aboutme": "I am a self taught and technically instructed Full Stack Web Developer, currently diving deeper into the wonderful world of software engineering. I believe success happens when passion and desire meet concerted action and effort. Keep striving!",
   "address": "Texas",
   "website": "https://github.com/emartey",
   "education": [

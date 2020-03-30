@@ -13,9 +13,6 @@ export default class Header extends Component {
       color2: 0x9b9b9b,
       color: 0x13b1bb,
       backgroundColor: 0x20255,
-      mouseControls: true,
-      touchControls: true,
-      scaleMobile: 0.60,
       THREE: THREE
     })
   }
