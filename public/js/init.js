@@ -130,11 +130,13 @@ jQuery(document).ready(function ($) {
       controlsContainer: ".flex-container",
       animation: 'slide',
       controlNav: true,
-      directionNav: false,
+      directionNav: true,
       smoothHeight: true,
       slideshowSpeed: 7000,
       animationSpeed: 600,
       randomize: false,
+      prevText: '<',
+      nextText: '>'
    });
 
    /*----------------------------------------------------*/
