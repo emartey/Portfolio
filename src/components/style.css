@@ -1,23 +1,24 @@
-.form-control{
-    min-width: 472px;
-    margin-left: 267px;
+.form-control {
+  min-width: 472px;
+  margin-left: 267px;
 }
 
-label, legend{
-    margin-left: -1%;
-    color: #ffffff
+label,
+legend {
+  margin-left: -1%;
+  color: #ffffff;
 }
 
-form{
-    margin-left: 1%;
+form {
+  margin-left: 1%;
 }
 
-.btn.btn-primary{
-   margin-right: 7%; 
+.btn.btn-primary {
+  margin-right: 7%;
 }
 
-.ten.columns.flex-container{
-    margin-right: 9%;
+.ten.columns.flex-container {
+  margin-right: 9%;
 }
 /* li.BAMAZON.flex-active-slide{
     margin-left: 1.35%;
@@ -39,11 +40,10 @@ cite.BAMAZON{
     margin-left: -1.4999%;
 } */
 
-.flex-control-paging li a{
-background-color: #95A3A3;
+.flex-control-paging li a {
+  background-color: #95a3a3;
 }
 
 .flex-control-paging li a.flex-active {
-    background-color: #11ABB0;
+  background-color: #11abb0;
 }
-
