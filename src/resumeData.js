@@ -74,6 +74,24 @@ let resumeData = {
   // ],
   portfolio: [
     {
+      name: "Buybit",
+      description:
+        "• This site, I built using Angular 8, Node, Express, Webpack",
+      imgurl: "images/portfolio/fidelity.png",
+      url: "https://buybit.io/",
+      className: "fa fa-github fa-w-16 fa-2x",
+    },
+
+    {
+      name: "Fidelity Family Office Services",
+      description:
+        "• Built using Angular 10, ASP.NET, TypeScript, YAML/JSON, NgRX, Rx.js",
+      imgurl: "images/portfolio/fidelity.png",
+      url: "https://insightexplorer.fidelity.com/home",
+      className: "fa fa-github fa-w-16 fa-2x",
+    },
+
+    {
       name: "Northwest Motorsports",
       description:
         "• Application built from scratch using Vue.js, Nuxt.js for front-end, and Node.js/Express.js for backend",
