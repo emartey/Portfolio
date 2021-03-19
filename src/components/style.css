@@ -47,3 +47,16 @@ cite.BAMAZON{
 .flex-control-paging li a.flex-active {
   background-color: #11abb0;
 }
+
+.flex-direction-nav {
+  width: 90%;
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-direction-nav li a  {
+  font-size: 50px;
+}
