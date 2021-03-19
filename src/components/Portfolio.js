@@ -57,15 +57,6 @@ export default class Porfolio extends Component {
                                   <p>{item.description}</p>
                                 </div>
                               </div> */}
-                                {/* <div class="custom-navigation">
-                      <a href="#" class="prev">
-                        Prev
-                      </a>
-                      <div class="custom-controls-container"></div>
-                      <a href="#" class="next">
-                        Next
-                      </a>
-                    </div> */}
                               </div>
                             </div>
                           </li>
