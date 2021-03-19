@@ -77,7 +77,7 @@ let resumeData = {
       name: "Buybit",
       description:
         "• This site, I built using Angular 8, Node, Express, Webpack",
-      imgurl: "images/portfolio/fidelity.png",
+      imgurl: "images/portfolio/buybit.png",
       url: "https://buybit.io/",
       className: "fa fa-github fa-w-16 fa-2x",
     },
