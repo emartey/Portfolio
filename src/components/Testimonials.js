@@ -75,7 +75,7 @@ export default class Testimonials extends Component {
   // Note: this is using default_service, which will map to whatever
   // default email provider you've set in your EmailJS account.
   sendFeedback(
-    templateId,
+    templateID,
     senderEmail,
     receiverEmail,
     message,
@@ -86,7 +86,7 @@ export default class Testimonials extends Component {
     window.emailjs
       .send(
         "default_service",
-        templateId,
+        templateID,
         {
           senderEmail,
           receiverEmail,
@@ -106,9 +106,7 @@ export default class Testimonials extends Component {
         });
       })
       // Handle errors here however you like
-      .catch((err) =>
-        console.error("Failed to send message. Error: ", templateId + err)
-      );
+      .catch((err) => console.error("Failed to send message. Error: ", err));
   }
 
   render() {
