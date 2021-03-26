@@ -106,7 +106,9 @@ export default class Testimonials extends Component {
         });
       })
       // Handle errors here however you like
-      .catch((err) => console.error("Failed to send message. Error: ", err));
+      .catch((err) =>
+        console.error("Failed to send message. Error: ", templateId + err)
+      );
   }
 
   render() {
