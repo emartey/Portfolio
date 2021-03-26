@@ -6,7 +6,7 @@
   "dependencies": {
     "axios": "^0.19.2",
     "cors": "^2.8.5",
-    "emailjs-com": "^2.4.1",
+    "emailjs-com": "^2.6.4",
     "express": "^4.17.1",
     "fittext": "^1.0.1",
     "flexslider": "^2.7.2",

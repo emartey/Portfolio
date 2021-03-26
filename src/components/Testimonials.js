@@ -61,9 +61,9 @@ export default class Testimonials extends Component {
       portfolio,
       this.sender,
       receiverEmail,
-      this.message.value,
-      this.personName.value,
-      this.personEmail.value,
+      this.refs.message.value,
+      this.refs.personName.value,
+      this.refs.personEmail.value,
       user
     );
 
